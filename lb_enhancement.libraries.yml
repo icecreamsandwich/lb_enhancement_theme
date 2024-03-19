@@ -1,0 +1,13 @@
+# Main theme library.
+global:
+  js:
+    js/lb-enhancement.js: {}
+    js/vendor/bootstrap/js/bootstrap.bundle.min.js: {}
+  css:
+    component:
+      css/component/block.css: {}
+      css/component/menu.css: {}
+    theme:
+      css/theme/style.css: {}
+      css/vendor/bootstrap/css/bootstrap.min.css: {}
+      css/vendor/bootstrap-icons/bootstrap-icons.css: {}

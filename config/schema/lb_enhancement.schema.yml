@@ -1,0 +1,8 @@
+# Schema for the configuration files of the lb_enhancement theme.
+lb_enhancement.settings:
+  type: theme_settings
+  label: 'lb_enhancement settings'
+  mapping:
+    example:
+      type: string
+      label: Example
