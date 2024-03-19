@@ -25,3 +25,27 @@ function lb_enhancement_preprocess_page(array &$variables): void {
 function lb_enhancement_preprocess_node(array &$variables): void {
 
 }
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ */
+function lb_enhancement_theme_suggestions_page_alter(&$suggestions, $variables) {
+    $path = \Drupal::requestStack()->getCurrentRequest()->getPathInfo();
+    if ($path != '/') {
+      $path = trim($path, '/');
+      $arg = str_replace(["/", '-'], ['_', '_'], $path);
+      $suggestions[] = 'page__' . $arg;
+    }
+  }
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ */
+function lb_enhancement_theme_suggestions_node_alter(&$suggestions, $variables) {
+    $path = \Drupal::requestStack()->getCurrentRequest()->getPathInfo();
+    if ($path != '/') {
+      $path = trim($path, '/');
+      $arg = str_replace(["/", '-'], ['_', '_'], $path);
+      $suggestions[] = 'node__' . $arg;
+    }
+  }

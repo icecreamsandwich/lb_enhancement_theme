@@ -1,0 +1,26 @@
+<h5 style="text-align: center;color: #8d281e;
+font-family: tahoma, arial, helvetica, sans-serif;
+font-size: 18pt;"> Vision </h5>
+
+    <div style="
+    text-align: center;
+    font-style: Arial, Helvetica, sans-serif;
+    margin-top: 30px;
+    ">{{ node.field_vision_text.value }}</div>
+
+
+  <img class="swiper-image" src="{{ file_url(node.field_vision_image[key].entity.uri.value) }}" alt="{{ node.field_vision_image[key].alt  }}" />
+
+
+<h5 style="text-align: center;
+color: #8d281e;
+font-family: tahoma, arial, helvetica, sans-serif;
+font-size: 18pt;
+margin-top: 30px;
+"> Mission </h5>
+
+    <div style="
+    text-align: center;
+    font-style: Arial, Helvetica, sans-serif;
+    margin: 30px 0px 0px 0px;
+    ">{{ node.field_mission_text.value }}</div>
