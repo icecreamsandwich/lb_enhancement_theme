@@ -1,0 +1,8 @@
+/*Override claro style*/
+.content-header{
+    overflow: visible !important;
+}
+
+.site_logo{
+    float: left;
+}

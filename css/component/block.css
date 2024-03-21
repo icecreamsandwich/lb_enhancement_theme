@@ -10,7 +10,15 @@
     margin: 5px 5px 5px 5px;
 }
 
-.layout--home-layout .layout__region--top_banner {
+.block-field-blocknodearticlefield-summary,
+.block-field-blocknodearticlebody {
+    background-color: steelblue;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin: 20px 0px 0px 0px;
+}
+
+.layout__region--header_right{
     background-color: steelblue;
     border: 1px solid grey;
     border-radius: 5px;
@@ -30,11 +38,3 @@
     border-radius: 5px;
     margin: 20px 0px 0px 10px;
 }
-/* .block-block-contentc40c5bd3-b89e-454d-92be-0416137dbce3,
-.block-block-contentd16ef6e3-50ff-48eb-b703-6657ac81689b{
-    background-color: steelblue;
-    border: 1px solid grey;
-    border-radius: 5px;
-    height: auto;
-    margin: 20px 5px 5px 5px;
-} */
